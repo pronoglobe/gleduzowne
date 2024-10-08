@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
                   ],
                 ),
               ),
-              Terminal(),
+              const Terminal(),
             ],
           ),
         ),

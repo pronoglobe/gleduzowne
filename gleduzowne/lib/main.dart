@@ -3,7 +3,7 @@ import 'package:gleduzowne/screens/home/main.dart';
 import 'package:gleduzowne/components/terminal/main.dart';
 
 void main() {
-  runApp(MyIDEApp());
+  runApp(const MyIDEApp());
 }
 
 class MyIDEApp extends StatelessWidget {
@@ -16,7 +16,7 @@ class MyIDEApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Home(),
+      body: const Home(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
