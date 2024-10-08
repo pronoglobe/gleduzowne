@@ -5,10 +5,16 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_linux
   contextual_menu
+  desktop_multi_window
+  flutter_acrylic
+  flutter_window_close
+  hotkey_manager_linux
   url_launcher_linux
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  flutter_pty
+  mixin_logger
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

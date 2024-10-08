@@ -7,11 +7,18 @@ list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_windows
   connectivity_plus
   contextual_menu
+  desktop_multi_window
+  disks_desktop
+  flutter_acrylic
+  flutter_window_close
+  hotkey_manager_windows
   share_plus
   url_launcher_windows
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
+  flutter_pty
+  mixin_logger
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

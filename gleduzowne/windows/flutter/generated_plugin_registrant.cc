@@ -10,6 +10,11 @@
 #include <bitsdojo_window_windows/bitsdojo_window_plugin.h>
 #include <connectivity_plus/connectivity_plus_windows_plugin.h>
 #include <contextual_menu/contextual_menu_plugin.h>
+#include <desktop_multi_window/desktop_multi_window_plugin.h>
+#include <disks_desktop/disks_desktop_plugin.h>
+#include <flutter_acrylic/flutter_acrylic_plugin.h>
+#include <flutter_window_close/flutter_window_close_plugin.h>
+#include <hotkey_manager_windows/hotkey_manager_windows_plugin_c_api.h>
 #include <share_plus/share_plus_windows_plugin_c_api.h>
 #include <url_launcher_windows/url_launcher_windows.h>
 
@@ -22,6 +27,16 @@ void RegisterPlugins(flutter::PluginRegistry* registry) {
       registry->GetRegistrarForPlugin("ConnectivityPlusWindowsPlugin"));
   ContextualMenuPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("ContextualMenuPlugin"));
+  DesktopMultiWindowPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("DesktopMultiWindowPlugin"));
+  DisksDesktopPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("DisksDesktopPlugin"));
+  FlutterAcrylicPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FlutterAcrylicPlugin"));
+  FlutterWindowClosePluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FlutterWindowClosePlugin"));
+  HotkeyManagerWindowsPluginCApiRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("HotkeyManagerWindowsPluginCApi"));
   SharePlusWindowsPluginCApiRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("SharePlusWindowsPluginCApi"));
   UrlLauncherWindowsRegisterWithRegistrar(
