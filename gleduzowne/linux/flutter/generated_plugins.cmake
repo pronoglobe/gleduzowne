@@ -9,6 +9,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   flutter_acrylic
   flutter_window_close
   hotkey_manager_linux
+  record_linux
   url_launcher_linux
 )
 
