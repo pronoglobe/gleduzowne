@@ -50,12 +50,12 @@ dependencies:
   sqflite: 
   flutter_animate: ^4.5.0
   just_audio: ^0.9.41
-  toggle_switch: ^2.3.0
-  convex_bottom_bar: ^3.2.0
+  # toggle_switch: ^2.3.0
+  # convex_bottom_bar: ^3.2.0
   sensors_plus: ^6.0.1
-  battery_plus: ^6.0.3
-  flutter_rust_bridge: ^2.4.0
-  msix: ^3.16.8
+  # battery_plus: ^6.0.3
+  # flutter_rust_bridge: ^2.4.0
+  # msix: ^3.16.8
   url_launcher: ^6.3.0
   flutter_svg: ^2.0.10+1
   auto_size_text: ^3.0.0
@@ -65,8 +65,8 @@ dependencies:
   feedback: ^3.1.0
   flutter_local_notifications: ^17.2.3
   sentry_flutter: ^8.9.0
-  flex_color_scheme: ^7.3.1
-  routemaster: ^1.0.1
+  # flex_color_scheme: ^7.3.1
+  # routemaster: ^1.0.1
   auto_updater: ^0.2.0
   bitsdojo_window: ^0.1.6
   contextual_menu: ^0.1.2

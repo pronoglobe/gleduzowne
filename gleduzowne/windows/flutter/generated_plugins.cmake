@@ -4,7 +4,6 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
   auto_updater_windows
-  battery_plus
   bitsdojo_window_windows
   connectivity_plus
   contextual_menu

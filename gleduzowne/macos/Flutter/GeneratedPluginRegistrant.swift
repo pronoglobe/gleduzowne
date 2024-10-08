@@ -7,7 +7,6 @@ import Foundation
 
 import audio_session
 import auto_updater_macos
-import battery_plus
 import bitsdojo_window_macos
 import connectivity_plus
 import contextual_menu
@@ -26,7 +25,6 @@ import video_player_avfoundation
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   AudioSessionPlugin.register(with: registry.registrar(forPlugin: "AudioSessionPlugin"))
   AutoUpdaterMacosPlugin.register(with: registry.registrar(forPlugin: "AutoUpdaterMacosPlugin"))
-  BatteryPlusMacosPlugin.register(with: registry.registrar(forPlugin: "BatteryPlusMacosPlugin"))
   BitsdojoWindowPlugin.register(with: registry.registrar(forPlugin: "BitsdojoWindowPlugin"))
   ConnectivityPlusPlugin.register(with: registry.registrar(forPlugin: "ConnectivityPlusPlugin"))
   ContextualMenuPlugin.register(with: registry.registrar(forPlugin: "ContextualMenuPlugin"))
