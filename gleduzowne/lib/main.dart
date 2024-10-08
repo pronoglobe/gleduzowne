@@ -7,6 +7,8 @@ void main() {
 }
 
 class MyIDEApp extends StatelessWidget {
+  const MyIDEApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,23 +22,25 @@ class MyIDEApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Gleduzowne'),
+        title: const Text('Gleduzowne'),
       ),
       drawer: Drawer(
         child: ListView(
           children: <Widget>[
-            DrawerHeader(
-              child: Text('Menu'),
+            const DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
+              child: Text('Menu'),
             ),
             ListTile(
-              title: Text('File'),
+              title: const Text('File'),
               onTap: () {},
             ),
             // Add more ListTiles for other menu items

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gleduzowne/components/terminal/main.dart';
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -12,7 +14,7 @@ class Home extends StatelessWidget {
             selectedIndex: 0,
             onDestinationSelected: (int index) {},
             labelType: NavigationRailLabelType.selected,
-            destinations: [
+            destinations: const [
               NavigationRailDestination(
                 icon: Icon(Icons.folder),
                 label: Text('Files'),
@@ -36,14 +38,14 @@ class Home extends StatelessWidget {
                       flex: 1,
                       child: Container(
                         color: Colors.grey[200],
-                        child: Center(child: Text('Editor Pane')),
+                        child: const Center(child: Text('Editor Pane')),
                       ),
                     ),
                     Flexible(
                       flex: 1,
                       child: Container(
                         color: Colors.grey[300],
-                        child: Center(child: Text('Render Pane')),
+                        child: const Center(child: Text('Render Pane')),
                       ),
                     ),
                   ],
