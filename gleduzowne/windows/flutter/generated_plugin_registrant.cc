@@ -6,6 +6,30 @@
 
 #include "generated_plugin_registrant.h"
 
+#include <auto_updater_windows/auto_updater_windows_plugin_c_api.h>
+#include <battery_plus/battery_plus_windows_plugin.h>
+#include <bitsdojo_window_windows/bitsdojo_window_plugin.h>
+#include <connectivity_plus/connectivity_plus_windows_plugin.h>
+#include <contextual_menu/contextual_menu_plugin.h>
+#include <dart_vlc/dart_vlc_plugin.h>
+#include <share_plus/share_plus_windows_plugin_c_api.h>
+#include <url_launcher_windows/url_launcher_windows.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
+  AutoUpdaterWindowsPluginCApiRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("AutoUpdaterWindowsPluginCApi"));
+  BatteryPlusWindowsPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("BatteryPlusWindowsPlugin"));
+  BitsdojoWindowPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("BitsdojoWindowPlugin"));
+  ConnectivityPlusWindowsPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("ConnectivityPlusWindowsPlugin"));
+  ContextualMenuPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("ContextualMenuPlugin"));
+  DartVlcPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("DartVlcPlugin"));
+  SharePlusWindowsPluginCApiRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("SharePlusWindowsPluginCApi"));
+  UrlLauncherWindowsRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("UrlLauncherWindows"));
 }
