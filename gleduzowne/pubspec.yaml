@@ -71,7 +71,7 @@ dependencies:
   bitsdojo_window: ^0.1.6
   contextual_menu: ^0.1.2
   xterm: ^4.0.0
-  terminal_flutter: ^0.0.1
+#  terminal_flutter: ^0.0.1
   # dart_vlc: 
   desktop_multi_window:
   disks_desktop: ^1.0.1
@@ -81,6 +81,7 @@ dependencies:
 #  global_shortcuts:
   hotkey_manager:
   record: ^5.1.2
+  desktop_drop:
 
 dev_dependencies:
   flutter_test:
