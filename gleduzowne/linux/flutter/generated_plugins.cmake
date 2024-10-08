@@ -5,8 +5,6 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_linux
   contextual_menu
-  dart_vlc
-  sentry_flutter
   url_launcher_linux
 )
 
