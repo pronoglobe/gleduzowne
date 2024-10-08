@@ -54,7 +54,7 @@ dependencies:
   # convex_bottom_bar: ^3.2.0
   sensors_plus: ^6.0.1
   # battery_plus: ^6.0.3
-  # flutter_rust_bridge: ^2.4.0
+  flutter_rust_bridge: ^2.4.0
   # msix: ^3.16.8
   url_launcher: ^6.3.0
   flutter_svg: ^2.0.10+1
