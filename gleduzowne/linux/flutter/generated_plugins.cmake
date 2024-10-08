@@ -5,6 +5,7 @@
 list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_linux
   contextual_menu
+  desktop_drop
   desktop_multi_window
   flutter_acrylic
   flutter_window_close

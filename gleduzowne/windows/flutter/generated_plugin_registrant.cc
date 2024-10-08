@@ -10,6 +10,7 @@
 #include <bitsdojo_window_windows/bitsdojo_window_plugin.h>
 #include <connectivity_plus/connectivity_plus_windows_plugin.h>
 #include <contextual_menu/contextual_menu_plugin.h>
+#include <desktop_drop/desktop_drop_plugin.h>
 #include <desktop_multi_window/desktop_multi_window_plugin.h>
 #include <disks_desktop/disks_desktop_plugin.h>
 #include <flutter_acrylic/flutter_acrylic_plugin.h>
@@ -28,6 +29,8 @@ void RegisterPlugins(flutter::PluginRegistry* registry) {
       registry->GetRegistrarForPlugin("ConnectivityPlusWindowsPlugin"));
   ContextualMenuPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("ContextualMenuPlugin"));
+  DesktopDropPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("DesktopDropPlugin"));
   DesktopMultiWindowPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("DesktopMultiWindowPlugin"));
   DisksDesktopPluginRegisterWithRegistrar(

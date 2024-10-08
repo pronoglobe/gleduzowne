@@ -7,6 +7,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   bitsdojo_window_windows
   connectivity_plus
   contextual_menu
+  desktop_drop
   desktop_multi_window
   disks_desktop
   flutter_acrylic

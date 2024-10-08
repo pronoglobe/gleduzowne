@@ -9,6 +9,7 @@ import auto_updater_macos
 import bitsdojo_window_macos
 import connectivity_plus
 import contextual_menu
+import desktop_drop
 import desktop_multi_window
 import disks_desktop
 import flutter_local_notifications
@@ -28,6 +29,7 @@ func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   BitsdojoWindowPlugin.register(with: registry.registrar(forPlugin: "BitsdojoWindowPlugin"))
   ConnectivityPlusPlugin.register(with: registry.registrar(forPlugin: "ConnectivityPlusPlugin"))
   ContextualMenuPlugin.register(with: registry.registrar(forPlugin: "ContextualMenuPlugin"))
+  DesktopDropPlugin.register(with: registry.registrar(forPlugin: "DesktopDropPlugin"))
   FlutterMultiWindowPlugin.register(with: registry.registrar(forPlugin: "FlutterMultiWindowPlugin"))
   DisksDesktopPlugin.register(with: registry.registrar(forPlugin: "DisksDesktopPlugin"))
   FlutterLocalNotificationsPlugin.register(with: registry.registrar(forPlugin: "FlutterLocalNotificationsPlugin"))

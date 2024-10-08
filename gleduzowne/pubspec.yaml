@@ -82,6 +82,7 @@ dependencies:
   hotkey_manager:
   record: ^5.1.2
   desktop_drop:
+  pasteboard:
 
 dev_dependencies:
   flutter_test:
