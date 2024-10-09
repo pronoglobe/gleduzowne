@@ -13,8 +13,10 @@ list(APPEND FLUTTER_PLUGIN_LIST
   flutter_acrylic
   flutter_window_close
   hotkey_manager_windows
+  pasteboard
   record_windows
   share_plus
+  tray_manager
   url_launcher_windows
 )
 

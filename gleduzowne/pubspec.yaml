@@ -83,6 +83,9 @@ dependencies:
   record: ^5.1.2
   desktop_drop:
   pasteboard:
+  audio_session: ^0.1.21
+  tray_manager:
+  flutter_resizable_container:
 
 dev_dependencies:
   flutter_test:

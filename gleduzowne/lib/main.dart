@@ -167,6 +167,7 @@
 import 'package:flutter/material.dart';
 import 'package:gleduzowne/screens/home/main.dart' as Home;
 import 'package:gleduzowne/components/terminal/main.dart';
+import 'package:gleduzowne/components/drawer/main.dart' as Drawer;
 
 void main() {
   runApp(const MyIDEApp());
@@ -196,24 +197,53 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Gleduzowne'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text('Menu'),
+
+
+
+
+
+
+
+
+
+
+      // drawer: Drawer(
+      //   child: ListView(
+      //     children: <Widget>[
+      //       const DrawerHeader(
+      //         decoration: BoxDecoration(
+      //           color: Colors.blue,
+      //         ),
+      //         child: Text('Gleduzowne'),
+      //       ),
+      //       ListTile(
+      //         title: const Text('File'),
+      //         onTap: () {},
+      //       ),
+      //       // Add more ListTiles for other menu items
+      //     ],
+      //   ),
+      // ),
+
+      // drawer: const Drawer.Home(),
+
+
+      drawer: LayoutBuilder(
+        builder: (context, constraints) {
+          return Container(
+            width: constraints.maxWidth * 0.5,
+            child: const Drawer.Home(
+              // child: Home(),
             ),
-            ListTile(
-              title: const Text('File'),
-              onTap: () {},
-            ),
-            // Add more ListTiles for other menu items
-          ],
-        ),
+          );
+        },
       ),
-      body: const Home.Home(),
+
+
+
+
+
+      body: Home.Home(),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(

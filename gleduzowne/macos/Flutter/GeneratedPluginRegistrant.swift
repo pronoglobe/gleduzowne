@@ -5,6 +5,7 @@
 import FlutterMacOS
 import Foundation
 
+import audio_session
 import auto_updater_macos
 import bitsdojo_window_macos
 import connectivity_plus
@@ -16,15 +17,18 @@ import flutter_local_notifications
 import flutter_window_close
 import hotkey_manager_macos
 import macos_window_utils
+import pasteboard
 import path_provider_foundation
 import record_darwin
 import share_plus
 import shared_preferences_foundation
 import sqflite
+import tray_manager
 import url_launcher_macos
 import video_player_avfoundation
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
+  AudioSessionPlugin.register(with: registry.registrar(forPlugin: "AudioSessionPlugin"))
   AutoUpdaterMacosPlugin.register(with: registry.registrar(forPlugin: "AutoUpdaterMacosPlugin"))
   BitsdojoWindowPlugin.register(with: registry.registrar(forPlugin: "BitsdojoWindowPlugin"))
   ConnectivityPlusPlugin.register(with: registry.registrar(forPlugin: "ConnectivityPlusPlugin"))
@@ -36,11 +40,13 @@ func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   FlutterWindowClosePlugin.register(with: registry.registrar(forPlugin: "FlutterWindowClosePlugin"))
   HotkeyManagerMacosPlugin.register(with: registry.registrar(forPlugin: "HotkeyManagerMacosPlugin"))
   MacOSWindowUtilsPlugin.register(with: registry.registrar(forPlugin: "MacOSWindowUtilsPlugin"))
+  PasteboardPlugin.register(with: registry.registrar(forPlugin: "PasteboardPlugin"))
   PathProviderPlugin.register(with: registry.registrar(forPlugin: "PathProviderPlugin"))
   RecordPlugin.register(with: registry.registrar(forPlugin: "RecordPlugin"))
   SharePlusMacosPlugin.register(with: registry.registrar(forPlugin: "SharePlusMacosPlugin"))
   SharedPreferencesPlugin.register(with: registry.registrar(forPlugin: "SharedPreferencesPlugin"))
   SqflitePlugin.register(with: registry.registrar(forPlugin: "SqflitePlugin"))
+  TrayManagerPlugin.register(with: registry.registrar(forPlugin: "TrayManagerPlugin"))
   UrlLauncherPlugin.register(with: registry.registrar(forPlugin: "UrlLauncherPlugin"))
   FVPVideoPlayerPlugin.register(with: registry.registrar(forPlugin: "FVPVideoPlayerPlugin"))
 }
