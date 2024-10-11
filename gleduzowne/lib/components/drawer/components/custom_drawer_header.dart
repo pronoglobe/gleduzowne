@@ -14,10 +14,14 @@ class CustomDrawerHeader extends StatelessWidget {
     required this.onScriptingModeToggle,
   });
 
+
+
+  // overrides for the head of the drawer
+
   @override
   Widget build(BuildContext context) {
     return DrawerHeader(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.blue,
       ),
       child: Column(

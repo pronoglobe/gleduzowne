@@ -35,7 +35,7 @@ class _VideoEditorState extends State<VideoEditor> {
     // Get the local file path (for example purposes, you can replace this with your actual file path)
     final directory = await getApplicationDocumentsDirectory();
     // final filePath = '${directory.path}/video.mp4';
-    const filePath = '/Users/tony/Downloads/20240821_144450_1.mp4';
+    const filePath = '/Users/tony/Downloads/20240729_224529-squizly.mp4';
 
 
     _controller = VideoPlayerController.file(

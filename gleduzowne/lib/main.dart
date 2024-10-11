@@ -195,7 +195,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gleduzowne'),
+        title: const Text('Gleduzowne Animator'),
       ),
 
 
@@ -243,24 +243,30 @@ class MyHomePage extends StatelessWidget {
 
 
 
-      body: Home.Home(),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.terminal),
-            label: 'Terminal',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
-          ),
-          // Add more BottomNavigationBarItems for other items
-        ],
-        onTap: (index) {
-          // Handle bottom navigation bar item taps
-        },
-      ),
+      body: Home.CustomDividerExampleScreen(),
+
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: const <BottomNavigationBarItem>[
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.terminal),
+      //       label: 'Terminal',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.notifications),
+      //       label: 'Notifications',
+      //     ),
+      //     // Add more BottomNavigationBarItems for other items
+      //   ],
+      //   onTap: (index) {
+      //     // Handle bottom navigation bar item taps
+      //   },
+      // ),
+      //
+
+
+
     );
+    // debug
   }
 }
 

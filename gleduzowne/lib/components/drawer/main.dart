@@ -5,6 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:desktop_multi_window/desktop_multi_window.dart';
 import 'package:gleduzowne/components/drawer/components/custom_drawer_header.dart';
 
+// In your main file
+// import 'package:flutter/material.dart';
+import 'package:gleduzowne/components/drawer/components/sideitems/buildfileviewport.dart';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -62,14 +66,14 @@ class _HomeState extends State<Home> {
                 setState(() {
                   drawerWidth += details.delta.dx;
                   if (drawerWidth < 200) drawerWidth = 200;
-                  if (drawerWidth > MediaQuery.of(context).size.width / 2) {
-                    drawerWidth = MediaQuery.of(context).size.width / 2;
+                  if (drawerWidth > MediaQuery.of(context).size.width / 4) {
+                    drawerWidth = MediaQuery.of(context).size.width / 4;
                   }
                 });
               },
               child: Container(
                 width: drawerWidth,
-                color: Colors.blue,
+                color: Colors.purple,
                 child: Column(
                   children: [
                     CustomDrawerHeader(
@@ -118,7 +122,7 @@ class _HomeState extends State<Home> {
 
   Widget _buildDrawerItem(IconData icon, String label) {
     return ListTile(
-      leading: Icon(icon, color: Colors.white),
+      leading: Icon(icon, color: Colors.red),
       title: Text(label, style: const TextStyle(color: Colors.white)),
       selected: selectedItem == label,
       onTap: () => _onItemSelected(label),
@@ -154,48 +158,53 @@ class _HomeState extends State<Home> {
     }
   }
 
+  // Widget _buildFileViewport() {
+  //   return const Center(child: Text('File Viewport'));
+  // }
+
+
   Widget _buildFileViewport() {
-    return Center(child: Text('File Viewport'));
+    return const FileExplorer();
   }
 
   Widget _buildExtensionsViewport() {
-    return Center(child: Text('Extensions Viewport'));
+    return const Center(child: Text('Extensions Viewport'));
   }
 
   Widget _buildSearchViewport() {
-    return Center(child: Text('Search Viewport'));
+    return const Center(child: Text('Search Viewport'));
   }
 
   Widget _buildSequencesViewport() {
-    return Center(child: Text('Sequences Viewport'));
+    return const Center(child: Text('Sequences Viewport'));
   }
 
   Widget _buildAnimateViewport() {
-    return Center(child: Text('Animate Viewport'));
+    return const Center(child: Text('Animate Viewport'));
   }
 
   Widget _buildDebugViewport() {
-    return Center(child: Text('Debug Viewport'));
+    return const Center(child: Text('Debug Viewport'));
   }
 
   Widget _buildAIVieport() {
-    return Center(child: Text('AI Viewport'));
+    return const Center(child: Text('AI Viewport'));
   }
 
   Widget _buildRenderViewport() {
-    return Center(child: Text('Render Viewport'));
+    return const Center(child: Text('Render Viewport'));
   }
 
   Widget _buildSettingsViewport() {
-    return Center(child: Text('Settings Viewport'));
+    return const Center(child: Text('Settings Viewport'));
   }
 
   Widget _buildAboutViewport() {
-    return Center(child: Text('About Viewport'));
+    return const Center(child: Text('About Viewport'));
   }
 
   Widget _buildVersionViewport() {
-    return Center(child: Text('Version Viewport'));
+    return const Center(child: Text('Version Viewport'));
   }
 }
 

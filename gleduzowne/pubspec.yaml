@@ -86,6 +86,8 @@ dependencies:
   audio_session: ^0.1.21
   tray_manager:
   flutter_resizable_container:
+  ffmpeg_cli: ^0.3.0
+  package_info_plus:
 
 dev_dependencies:
   flutter_test:
